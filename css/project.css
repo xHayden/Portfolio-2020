@@ -1,0 +1,118 @@
+body {
+  background-color: black;
+  padding:0; margin:0;
+}
+br {
+   display: block;
+   margin: 10px 0;
+   line-height:200px;
+}
+.wrapword{
+white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+white-space: -webkit-pre-wrap; /*Chrome & Safari */
+white-space: -pre-wrap;      /* Opera 4-6 */
+white-space: -o-pre-wrap;    /* Opera 7 */
+white-space: pre-wrap;       /* css-3 */
+word-wrap: break-word;       /* Internet Explorer 5.5+ */
+word-break: break-all;
+white-space: normal;
+}
+.bar-item:hover {
+  background-color: lightgrey;
+}
+.bar-item:link {
+  color: white;
+  text-decoration: none;
+}
+.bar-item:visited {
+  color: white;
+  text-decoration: none;
+}
+.bar-item {
+  padding: 8px 5%;
+  text-align: center;
+  background-color: black;
+}
+.col {
+  float: left;
+  width: 100%;
+}
+.col.1 {
+  width: 8.33333%
+}
+.col.2 {
+  width: 16.66666%
+}
+.col.3, .quarter {
+  width: 24.99999%
+}
+.top {
+  position: fixed;
+  background-color: black;
+  font-family: 'Oswald', serif;
+  font-size: 25px;
+  padding: 20px 0px;
+  width: 100%;
+  z-index: 1
+  top: 0
+}
+.container:after,.container:before,.panel:after,.panel:before,.row:after,.row:before,.row-padding:after,.row-padding:before, .cell-row:before,.cell-row:after,.clear:after,.clear:before,.bar:before,.bar:after {
+    content: "";
+    display: table;
+    clear: both
+}
+.row-padding,.row-padding>.half,.row-padding>.third,.row-padding>.twothird,.row-padding>.threequarter,.row-padding>.quarter,.row-padding>.w3-col {
+    padding: 0 8px
+}
+.padding-64 {
+    padding-top: 64px!important;
+    padding-bottom: 64px!important
+}
+.w3-card {
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)
+}
+.quarter {
+  display: inline-block;
+  float: left;
+  width: 24%
+}
+.w3-container {
+  position: relative
+  padding: 0.01em 16px
+}
+.titles {
+  background-color: white;
+  background-repeat: round;
+  font-family: 'Noto Serif', serif;
+}
+.travellocation {
+  font-size: 50px;
+  padding: 300px 100px;
+  color: white;
+}
+.parallax {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  padding: 0px 0px;
+  position: sticky;
+  background-repeat: no-repeat;
+  object-fit: contain;
+  background-size: cover;
+  background-image: url('../images/arizonaext.jpg');
+}
+.hotels {
+  float: left;
+  text-align: left;
+  background-color: white;
+  margin: auto;
+}
+.events {
+  float: left;
+  text-align: right;
+  background-color: white;
+  margin: auto;
+}
+.center {
+  background-color: white;
+  font-family: "Noto Serif", serif;
+}
