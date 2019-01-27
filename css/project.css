@@ -174,5 +174,18 @@ white-space: normal;
   text-align: center;
   font-size: 100px;
   color: white;
+  font-family: 'Courgette';
+}
+.homepage {
+  background-color: rgb(13, 13, 13);
+  padding: 15% 15%;
+}
+.defaulttext {
+  color: white;
+  font-size: 20px;
   font-family: 'Courgette', cursive;
+  text-align: center;
+}
+.linkonhomepage {
+
 }
