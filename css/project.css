@@ -1,11 +1,23 @@
+html {
+  scroll-behavior: smooth;
+}
 body {
-  background-color: black;
+  background-color: rgb(13, 13, 13);
   padding:0; margin:0;
 }
 br {
    display: block;
-   margin: 10px 0;
-   line-height:200px;
+   margin: 5px 0;
+   line-height:50px;
+}
+table {
+  border: 1px solid black;
+}
+th, td {
+  padding: 5px 15px;
+}
+th {
+  text-decoration: underline;
 }
 .wrapword{
 white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
@@ -16,6 +28,9 @@ white-space: pre-wrap;       /* css-3 */
 word-wrap: break-word;       /* Internet Explorer 5.5+ */
 word-break: break-all;
 white-space: normal;
+}
+.topPageFix {
+  background-color: white !important
 }
 .bar-item:hover {
   background-color: lightgrey;
@@ -47,6 +62,7 @@ white-space: normal;
   width: 24.99999%
 }
 .top {
+  text-align: center;
   position: fixed;
   background-color: black;
   font-family: 'Oswald', serif;
@@ -64,9 +80,13 @@ white-space: normal;
 .row-padding,.row-padding>.half,.row-padding>.third,.row-padding>.twothird,.row-padding>.threequarter,.row-padding>.quarter,.row-padding>.w3-col {
     padding: 0 8px
 }
+.padding {
+  padding: 0px 10px;
+  padding-bottom: 5px!important;
+}
 .padding-64 {
     padding-top: 64px!important;
-    padding-bottom: 64px!important
+    padding-bottom: 64px!important;
 }
 .w3-card {
   box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)
@@ -79,6 +99,7 @@ white-space: normal;
 .w3-container {
   position: relative
   padding: 0.01em 16px
+
 }
 .titles {
   background-color: white;
@@ -115,4 +136,20 @@ white-space: normal;
 .center {
   background-color: white;
   font-family: "Noto Serif", serif;
+}
+.white, .white:visited, .white:link {
+  padding: 5px 20px;
+  font-family: "Noto Serif", serif;
+  color: white;
+}
+.urls, .urls:visited, .urls:link {
+  font-family: "Noto Serif", serif;
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+}
+.schedule {
+  font-size: 35px;
+  text-align: center;
+  padding: 5px 50px
 }
