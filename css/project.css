@@ -4,20 +4,29 @@ html {
 body {
   background-color: rgb(13, 13, 13);
   padding:0; margin:0;
+
 }
 br {
    display: block;
    margin: 5px 0;
-   line-height:50px;
+   line-height:55px;
 }
-table {
+table, th, td {
   border: 1px solid black;
+  border-collapse: collapse;
+  font-size: 25px;
 }
 th, td {
   padding: 5px 15px;
 }
+table {
+  margin-top: 5px;
+  margin-bottom: 25px;
+}
 th {
+  font-size: 40px;
   text-decoration: underline;
+  width: 20%;
 }
 .wrapword{
 white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
@@ -32,21 +41,22 @@ white-space: normal;
 .topPageFix {
   background-color: white !important
 }
-.bar-item:hover {
-  background-color: lightgrey;
+.bar-item:hover{
+  transition: 0.7s;
+  background-color: white;
+  color: black;
 }
 .bar-item:link {
-  color: white;
   text-decoration: none;
 }
 .bar-item:visited {
-  color: white;
   text-decoration: none;
 }
 .bar-item {
   padding: 8px 5%;
   text-align: center;
   background-color: black;
+  color: white;
 }
 .col {
   float: left;
@@ -129,12 +139,18 @@ white-space: normal;
 }
 .events {
   float: left;
-  text-align: right;
+  text-align: left;
   background-color: white;
   margin: auto;
 }
 .center {
+  font-family: "Noto Serif", serif;
   background-color: white;
+}
+.scheduletable {
+  background-color: rgb(13, 13, 13);
+  color: white;
+  opacity: 0.6;
   font-family: "Noto Serif", serif;
 }
 .white, .white:visited, .white:link {
@@ -152,4 +168,11 @@ white-space: normal;
   font-size: 35px;
   text-align: center;
   padding: 5px 50px
+}
+.headings {
+  padding: 50px 200px;
+  text-align: center;
+  font-size: 100px;
+  color: white;
+  font-family: 'Courgette', cursive;
 }

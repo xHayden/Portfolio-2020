@@ -10,10 +10,9 @@ function scrollToEvents() {
 function scrollToContact() {
   document.getElementById("schedule").scrollIntoView();
 }
-  $(document).ready(function() {
-    $("body").css("display", "none");
-  });
-  $(document).ready(function() {
-    $("body").css("display", "none");
-    $("body").fadeIn(1000);
-  });
+$(document).ready(function() {
+  $("body").css("display", "none");
+  $("body").fadeIn(1000);
+});
+
+//Thanks for reading this. You made my day.
