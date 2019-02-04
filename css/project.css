@@ -4,7 +4,7 @@ body {
   background-color: rgb(13, 13, 13);
   padding:0;
   margin:0;
-
+  overflow:hidden;
 }
 br {
    display: block;
@@ -179,21 +179,20 @@ td:hover, th:hover {
   font-family: 'Courgette';
 }
 .homepage {
-  background-image: url("../images/devdancelogo.png");
   background-position: 24vw 5vw;
-  background-color: rgb(13,13,13);
+  position: absolute;
   background-repeat: no-repeat;
-  background-size: 55vw;
-
 }
 .defaulttext {
+  text-align: center;
   color: white;
   font-size: 20px;
   font-family: 'Courgette', cursive;
-  text-align: center;
-  padding: 15% 15%;
-  position: relative;
-  top: 120px;
+  position: absolute;
+  padding-top: 15%;
+  position:absolute;
+  background-size: 100vw;
+  width: 100%;
 }
 .linkonhomepage {
 
@@ -300,7 +299,7 @@ td:hover, th:hover {
   26% {background-image: url("../images/animation/frame10.png");}
   28% {background-image: url("../images/animation/frame11.png");}
   30% {background-image: url("../images/animation/frame12.png");}
-  32% {background-image: url("../images/animation/frame12.png");}
+  32% {background-image: url("../images/animation/frame12.png");}s
   34% {background-image: url("../images/animation/frame12.png");}
   36% {background-image: url("../images/animation/frame12.png");}
   38% {background-image: url("../images/animation/frame12.png");}
@@ -313,17 +312,16 @@ td:hover, th:hover {
   100% {background-image: url("../images/animation/frame12.png");}
 }
 .test {
+  padding-top: 100%;
   position:absolute;
-  left:0px;
-  right:0px;
-  z-index: -1;
   animation-iteration-count: infinite;
   background-repeat: no-repeat;
   animation-name: homescreen;
   animation-duration: 3s;
-  width:100%;
-  background-size: 55vw;
-  animation-delay: 2s;
+  background-size: 50vw;
+  margin-left: 25vw;
+  width: 100%;
+  animation-delay:1s;
   -webkit-transform: translateZ(0);
 -moz-transform: translateZ(0);
 -ms-transform: translateZ(0);
