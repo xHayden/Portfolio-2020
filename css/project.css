@@ -42,7 +42,9 @@ word-break: break-all;
 white-space: normal;
 }
 .topPageFix {
+  line-height: 3.2vw;
   background-color: white !important
+
 }
 .bar-item:hover{
   transition: 0.7s;
@@ -175,11 +177,18 @@ td:hover, th:hover {
   padding: 5px 50px
 }
 .headings {
-  padding: 5vw 0px;
+  padding: 3vw 0px;
+}
+.textheading {
   text-align: center;
+  background-color: rgba(40,40,40, 0.5);
+  display: block;
+  margin: auto;
+  width: 22vw;
   font-size: 5vw;
   color: white;
   font-family: 'Courgette';
+  border: 5px solid white;
 }
 .homepage {
   background-position: 24vw 5vw;
@@ -226,7 +235,7 @@ td:hover, th:hover {
   bottom: 0;
 }
 .hotelbackground {
-  background-image: url("../images/hotel.jpg");
+  background-image: url("../images/hotels.jpg");
   background-position: 0px -20vw;
   background-repeat: no-repeat;
   object-fit: contain;
