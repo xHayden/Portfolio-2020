@@ -226,7 +226,7 @@ td:hover, th:hover {
   bottom: 0;
 }
 .hotelbackground {
-  background-image: url("https://cache.marriott.com/marriottassets/marriott/PHXGP/phxgp-exterior-7698-hor-feat.jpg");
+  background-image: url("../images/hotel.jpg");
   background-position: 0px -20vw;
   background-repeat: no-repeat;
   object-fit: contain;
@@ -236,7 +236,7 @@ td:hover, th:hover {
 }
 .eventsbackground {
   background-repeat: no-repeat;
-  background-image: url("http://www.mvifi.org/wp-content/uploads/2018/06/IMG_0521.jpg");
+  background-image: url("../images/events.jpg");
   object-fit: contain;
   background-size: cover;
   margin-top: 0;
@@ -244,7 +244,7 @@ td:hover, th:hover {
 }
 .schedulebackground {
   background-repeat: no-repeat;
-  background-image: url("https://www.agbell.org/portals/26/Chapters/Arizona/Arizona.jpg?ver=2018-08-27-154826-870");
+  background-image: url("../images/schedule.jpg");
   background-position: center;
   object-fit: contain;
   background-size: cover;
@@ -253,7 +253,7 @@ td:hover, th:hover {
 }
 .costsbackground {
   background-repeat: no-repeat;
-  background-image: url("http://dastornews.com/wp-content/uploads/2017/12/Things-to-do-new-header.jpg");
+  background-image: url("../images/costs.jpg");
   background-position: center;
   object-fit: contain;
   background-size: cover;
@@ -262,7 +262,7 @@ td:hover, th:hover {
 }
 .flightsbackground {
   background-repeat: no-repeat;
-  background-image: url("https://wallpapersite.com/images/wallpapers/airplane-4200x2608-aircraft-air-travel-4k-1028.jpg");
+  background-image: url("../images/flights.jpg");
   background-position: center;
   object-fit: contain;
   background-size: cover;
