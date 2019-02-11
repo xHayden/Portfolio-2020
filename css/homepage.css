@@ -4,6 +4,7 @@ body {
   background-color: rgb(13, 13, 13);
   padding:0;
   margin:0;
+  overflow: hidden;
 }
 br {
    display: block;
@@ -29,9 +30,6 @@ th {
 td {
   text-align: center;
   font-size: 1.5vw;
-}
-.homepagescrollfix: {
-    overflow:hidden;
 }
 .wrapword{
 white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
@@ -127,18 +125,22 @@ white-space: normal;
 }
 .travellocation {
   font-size: 2.5vw;
-  padding: 300px 100px;
+  padding: 200px 0px;
+  padding-bottom: 500px;
   color: white;
 }
-.parallax {
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  padding: 0px 0px;
-  position: sticky;
-  background-repeat: no-repeat;
-  object-fit: contain;
-  background-size: cover;
-  background-image: url('../images/arizonaext.jpg');
+#animate-area	{
+	width: 100%;
+  background-size: 50vw;
+	background-image: url("https://opengameart.org/sites/default/files/desert_6.png");
+	background-position: 0px 0px;
+	background-repeat: repeat-x;
+  object-fit: cover;
+	animation: animatedBackground 40s linear infinite;
+}
+@keyframes animatedBackground {
+	from { background-position: 0 0; }
+	to { background-position: 100% 0; }
 }
 .events {
   float: left;
