@@ -108,10 +108,13 @@ white-space: normal;
 .w3-card {
   box-shadow: 0 4px 5px 0 rgba(0,0,0,0.16),0 4px 10px 0 rgba(0,0,0,0.12)
 }
+.card-img {
+  height: 15vw;
+}
 .quarter {
   display: inline-block;
   float: left;
-  width: 15.8%;
+  width: 24%;
   text-align: center;
   font-size: 1vw;
 }
@@ -141,10 +144,11 @@ white-space: normal;
   background-image: url('../images/arizonaext.jpg');
 }
 .events {
+  margin-top: 5vw;
   float: left;
-  text-align: left;
+  text-align: center;
+  font-size: 2vw;
   background-color: white;
-  margin: auto;
 }
 .center {
   font-family: "Noto Serif", serif;
@@ -235,6 +239,13 @@ td:hover, th:hover {
   padding: 0% 2%;
   left: 0;
   bottom: 0;
+}
+.eventsheading {
+  padding-bottom: 1vw;
+  text-align: center;
+  font-size: 2vw;
+  font-family: NotoSerif, serif;
+  color:white;
 }
 .hotelbackground {
   background-image: url("../images/hotels.jpg");

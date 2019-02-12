@@ -130,13 +130,8 @@ white-space: normal;
   color: white;
 }
 #animate-area	{
-	width: 100%;
-  background-size: 50vw;
 	background-image: url("https://opengameart.org/sites/default/files/desert_6.png");
-	background-position: 0px 0px;
-	background-repeat: repeat-x;
-  object-fit: cover;
-	animation: animatedBackground 40s linear infinite;
+	animation: animatedBackground 20s linear infinite;
 }
 @keyframes animatedBackground {
 	from { background-position: 0 0; }
