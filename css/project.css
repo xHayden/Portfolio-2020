@@ -158,9 +158,19 @@ white-space: normal;
 }
 .center-cards {
 }
-.scheduletable {
-  background-color: rgb(13, 13, 13);
+.coststable {
+  margin-top: 1vw;
+  background-color: rgb(13,13,13);
   color: white;
+  font-family: "Noto Serif", serif;
+}
+.scheduletable {
+  background-color: white;
+  color: black;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+  margin-left: 25vw;
+  margin-right: 25vw;
   font-family: "Noto Serif", serif;
 }
 td:hover, th:hover {
@@ -185,7 +195,7 @@ td:hover, th:hover {
 .headings {
   padding: 3vw 0px;
 }
-.textheading {
+.textheading, .textheading2 {
   text-align: center;
   background-color: rgba(40,40,40, 0.5);
   display: block;
@@ -195,6 +205,9 @@ td:hover, th:hover {
   color: white;
   font-family: 'Courgette';
   border: 5px solid white;
+}
+.textheading2 {
+    width: 45vw;
 }
 .homepage {
   background-position: 24vw 5vw;
