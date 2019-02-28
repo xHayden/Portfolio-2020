@@ -30,6 +30,12 @@ td {
   text-align: center;
   font-size: 1.5vw;
 }
+h1 {
+  font-size:1.7vw;
+}
+h2 {
+  font-size: 1.3vw;
+}
 .wrapword{
 white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
 white-space: -webkit-pre-wrap; /*Chrome & Safari */
@@ -193,6 +199,9 @@ td:hover, th:hover {
   position: absolute;
   background-repeat: no-repeat;
 }
+.travelp {
+  font-size: 6vw;
+}
 .defaulttext {
   text-align: center;
   color: white;
@@ -203,6 +212,11 @@ td:hover, th:hover {
   position:absolute;
   background-size: 100vw;
   width: 100%;
+}
+#rcorners2 {
+  border-radius: 1.5vw;
+  border: 0.2vw solid black;
+  padding: 2vw;
 }
 .linkonhomepage {
   padding-left: 1vw;
@@ -353,8 +367,16 @@ td:hover, th:hover {
   position:absolute;
   z-index: 1;
 }
+.bottomimages {
+  margin-left:2vw;
+  margin-top: 5vw;
+  text-align: right;
+  height: 12.5vw;
+  z-index: 1;
+  background-color: white;
+}
 .factheading {
-  font-size: 3vw;
+  font-size: 2.5vw;
 }
 .test {
   padding-top: 100%;
