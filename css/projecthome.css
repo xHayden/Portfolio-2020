@@ -130,7 +130,7 @@ white-space: normal;
 }
 .travellocation {
   font-size: 2.5vw;
-  padding: 10vw 0px;
+  padding: 0vw 0px;
   padding-bottom: 5vw;
   color: white;
 }
@@ -399,4 +399,59 @@ transform: translateZ(0);
   background-attachment: fixed;
   padding: 0px 0px;
   position: sticky;
+}
+
+/* Popup container */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  margin-top: 5vw;
+  margin-left: 55vw;
+  font-size: 0.8vw;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  width: 20vw;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 0.5vw;
+  padding: 0.5vw 0;
+  position: absolute;
+  z-index: 1;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+.popup .hide {
+  -webkit-animation: fadeOut 1s;
+  animation: fadeOut 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+@-webkit-keyframes fadeOut {
+  from {opacity: 1;}
+  to {opacity: 0;}
+}
+
+@keyframes fadeOut {
+  from {opacity: 1;}
+  to {opacity:0 ;}
 }
