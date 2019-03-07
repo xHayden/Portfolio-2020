@@ -206,14 +206,14 @@ td:hover, th:hover {
   width: 100%;
 }
 .linkonhomepage {
+  position: absolute;
   padding-left: 1vw;
   padding-right: 1vw;
   padding-top: 0.5vw;
   padding-bottom: 0.5vw;
-  position: absolute;
   left: 1vw;
   z-index: 10;
-  top: 40vw;
+  top: 42vw;
   color: rgb(220,220,220);
   font-family: NotoSerif, serif;
   font-size: 1vw;
