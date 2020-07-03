@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato&family=Roboto&family=Yellowtail&display=swap');
+html {
+    scroll-behavior: smooth;
+    font-family: 'Bebas Neue', cursive;
+    margin: 0;
+}
+
+.nav {
+    float: left;
+    margin-left: 2%;
+    position: sticky;
+    top: 30%;
+    
+}
+
+.nav img {
+    width: 2vw;
+}
+
+.nav tr { 
+    color: black;
+    text-align: center;
+}
+
+.nav a:visited, .nav a{
+    color:black;
+    
+}
+
+.nav a:hover, .nav a:visited, .nav a {
+    text-decoration: none;
+}
+
+.nav th {
+    color: black;
+    border-bottom: 1px solid #bebebe;
+    border-top: 1px solid #bebebe;
+    transition: padding 100ms linear;
+    will-change: padding;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+.nav th:hover {
+    padding: 1rem 0.5rem 1rem 0.5rem;
+    transition: padding 200ms linear;
+}
+
+.nav table {
+    font-size: 1vw;
+    padding-bottom: 10px;
+    border-collapse: separate;
+    border-spacing: 15px;
+}
+
+
+
+.emphasize {
+    color: rgb(0, 163, 168);
+}
+
+body {
+    margin: 0;
+}
+
+.main-section {
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 100%;
+    text-align: center;
+    margin: auto;
+}
+
+.main-section p {
+    margin: 0;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.section-heading {
+    margin-top: 0;
+    padding-top: 10%;
+    font-weight: 100;
+    font-size: 3vw;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.section {
+    justify-content: center;
+    width: 40%;
+    height: 100%;
+    text-align: center;
+    margin: auto;
+}
+
+.section a {
+    font-size: 1.5vw;
+    color: rgb(0, 112, 116);
+    transition: 1s;
+}
+
+.section a:hover {
+    color: rgb(0, 163, 168);
+}
+
+.section a, .section a:visited, .section a:hover {
+    text-decoration: none;
+}
+
+.section p {
+    font-size: 1.5vw;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.big-text-main {
+    font-size: 5vw;
+    display:inline-block;
+    margin-top: 0;
+}
+
+#contact-div {
+    padding-top: 16%;
+}
+
+.footer {
+    padding-left: 20px;
+    position: sticky;
+    bottom: 0;
+}
+
+/**https://codepen.io/raf187/pen/BvgGRQ**/
+.arrow{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.arrow span{
+    display: block;
+    width: 3vw;
+    height: 3vw;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    transform: rotate(45deg);
+    margin: -15px;
+    animation: animate 2s infinite;
+}
+.arrow span:nth-child(2){
+    animation-delay: -0.2s;
+}
+.arrow span:nth-child(3){
+    animation-delay: -0.4s;
+}
+@keyframes animate {
+    0%{
+        opacity: 0;
+        transform: rotate(45deg) translate(-10px,-10px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(45deg) translate(20px,20px);
+    }
+}

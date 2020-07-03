@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+body {
+    background-color: rgb(20, 20, 20);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+#portfolio-joke {
+    color: rgb(146, 199, 212)
+}
+
+.indent {
+    margin-left: 40px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.link {
+    color: rgb(200, 200, 200);
+}
+
+.link:hover {
+    color: rgb(170, 170, 170);
+}
+
+a, a:hover, a:visited, a:active {
+    text-decoration: none;
+}
+
+#name {
+    border-bottom: 1px solid #bebebe;
+}
+
+.image {
+    display: block;
+    margin-bottom: 5px;
+    width: 20rem;
+    margin-top: 5px;
+    margin-right: 40px;
+    float: left;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+.table-standard {
+    border-collapse: collapse;
+    margin: auto;
+    width: 90%;
+}
+.table-standard td, .table-standard th {
+    padding-left: 5px;
+    padding-right: 5px;
+    border: 1px solid white;
+}
+
+.heading {
+    padding-top: 2%;
+    margin: auto;
+    width: 70%;
+    position: relative;
+}
+
+.personal-desc-row { 
+    color: white;
+    text-align: center;
+}
+
+.personal-desc-item a:visited {
+    color:white;
+}
+
+.personal-desc-item {
+    color: white;
+    border-bottom: 1px solid #bebebe;
+    border-top: 1px solid #bebebe;
+    transition: padding 100ms linear;
+    will-change: padding;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+.personal-desc-item:hover {
+    padding: 1rem 0.5rem 1rem 0.5rem;
+    transition: padding 200ms linear;
+}
+
+#personal-desc-table {
+    font-size: 1vw;
+    padding-bottom: 10px;
+    border-collapse: separate;
+    border-spacing: 15px;
+}
+
+#nav {
+    overflow-x: hidden;
+    width: 10vw;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 2%;
+    float: left;
+    z-index: 10;
+}
+
+.info-frame {
+    padding-left: 5%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 5%;
+    margin-left: 10vw;
+    background-color: rgb(40, 40, 40);
+    position: relative;
+}
+
+
+/**https://codepen.io/raf187/pen/BvgGRQ**/
+.arrow{
+    position: absolute;
+    top: 90%;
+    left: 7.5%;
+    transform: translate(-50%,-50%);
+}
+.arrow span{
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-bottom: 2px solid #bebebe;
+    border-right: 2px solid #c5c5c5;
+    transform: rotate(45deg);
+    margin: -15px;
+    animation: animate 2s infinite;
+}
+.arrow span:nth-child(2){
+    animation-delay: -0.2s;
+}
+.arrow span:nth-child(3){
+    animation-delay: -0.4s;
+}
+@keyframes animate {
+    0%{
+        opacity: 0;
+        transform: rotate(45deg) translate(-10px,-10px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(45deg) translate(20px,20px);
+    }
+}

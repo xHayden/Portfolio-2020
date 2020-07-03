@@ -1,37 +1,98 @@
----
-layout: default
----
-<!DOCTYPE html>
 <html>
 <head>
-  <link href="https://fonts.googleapis.com/css?family=Courgette|Noto+Serif|Oswald" rel="stylesheet">
-  <link rel="stylesheet" href="css/homepage.css">
-  <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
-  <title>dev.dance</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Hayden Carpenter</title>
+    <link rel="stylesheet" type="text/css" href="css/portfolio.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/portfolio.js"></script>
+    
 </head>
-<body class="homepagescrollfix">
-  <div class="test">
-  </div>
-  <div class="homepage defaulttext" style="overflow:visible;">
-    <br>
-    <h1 class="textonhome">A Bad Website by Hayden Carpenter</h1>
-	<p>At least it isn't Squarespace</p>
-	<br>
-	<div id="links">
-		<a href="https://phishing.fish" target="_blank">Cybersecurity Club/Projects</a>
-		<br>
-		<a href="https://github.com/xHayden" target="_blank">Github</a>
-		<br>
-		<a href="https://decaturrobotics.org/frc/" target="_blank">Decatur Robotics</a>
-		<br>
-	</div>
-	<div id="email">
-		<a href = "mailto: hayden@dev.dance">hayden@dev.dance</a>
-	</div>
-  </div>
-  <br>
-    <div class="homepage defaulttext">
+
+<nav class="nav">
+    <table>
+        <tr>
+            <th><a href="#ScoutJanssen">Scout Janssen<br><img src="images/icons/icons8-django-100.png"><img src="images/icons/icons8-python-100.png"><img src="images/icons/icons8-javascript-100.png"></a></th>
+            
+        </tr>
+        <tr>
+            <th><a href="#MidiToEarsketch">Midi To Earksetch <br><img src="images/icons/icons8-javascript-100.png"></a></th>
+            
+        </tr>
+        <tr>
+            <th><a href="#Karten">Karten<br><img src="images/icons/icons8-react-100.png"><img src="images/icons/icons8-javascript-100.png"></a></th>
+        </tr>
+        <tr>
+            <th><a href="#Contact">Contact<br></a></th>
+        </tr>
+    </table>
+</nav>
+
+
+<div class="main-section">
+    <div>
+        <p class="big-text-main">Stuff by <span class="big-text-main emphasize" id="me-name">Hayden Carpenter</span></p>
     </div>
-</body>
+    <div class="arrow">
+        <a href="#ScoutJanssen">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+    </div>
+</div>
+<div class="section" id="ScoutJanssen">
+    <a class="link" target="_blank" href="https://github.com/VeryCleverName3/Scout-Janssen/tree/django-rewrite"><h1 class="section-heading">Scout Janssen</h1></a>
+    <p>Scout Janssen is a Robot Scouting Tool built for the FIRST Robotics Competition (FRC).</p>
+    <p>The project is built primarily with Django and Node.js.</p>
+    <a href="https://frc4026.com" target="_blank">Visit frc4026.com.</a>
+    <div class="arrow" style="top:170%">
+        <a href="#MidiToEarsketch">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+    </div>
+</div>
+<div class="section" id="MidiToEarsketch">
+    <a class="link" target="_blank" href="https://github.com/xHayden/MidiToEarsketch"><h1 class="section-heading">Midi To Earsketch</h1></a>
+    <p>Earksketch is a program by Georgia Tech which allows you to create music with code.</p>
+    <p>It is intended to introduce programming to students.</p>
+    <p>Why make one song in Earksetch when you can make all of them?</p>
+    <iframe width="50%" height="150" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/851299036&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/hayden-carpenter-611511404" title="HAYDEN CARPENTER" target="_blank" style="color: #cccccc; text-decoration: none;"></a> · <a href="https://soundcloud.com/hayden-carpenter-611511404/la-wooshenella-la-campanella" title="La Wooshenella (La Campanella)" target="_blank" style="color: #cccccc; text-decoration: none;"></a></div>
+    
+
+    <div class="arrow" style="top:270%">
+        <a href="#Karten">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+    </div>
+</div>
+
+<div class="section" id="Karten">
+    <a class="link" target="_blank" href="https://github.com/xHayden/MidiToEarsketch"><h1 class="section-heading">Karten</h1></a>
+    <p>Karten is a tool built in React to quickly create flashcards for foreign languages.</p>
+    <p>Karten supports any languge supplied by the Yandex API, and is able to convert to Quizlet Study Sets.</p>
+    <div class="arrow" style="top:370%">
+        <a href="#Contact">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+    </div>
+</div>
+<hr>
+<div class="section" id="Contact">
+    <a class="link" target="_blank" href=""><h1 class="section-heading">Contact</h1></a>
+    <div id="contact-div">
+        <p>Contact me at <a target="_blank" href="mailto:93haydcarp@csdecatur.net">93haydcarp@csdecatur.net</p>
+        <a target="_blank" href="https://www.instagram.com/hayden.carpenter/"><img src="images/icons/icons8-instagram-100.png" width="10%"></a>
+        <a target="_blank" href="https://www.github.com/xhayden/"><img src="images/icons/icons8-github-100.png" width="10%"></a>
+    </div>
+</div>
+
+<div class="footer">
+    <p>Built by Hayden Carpenter | 2020</p>
+</div>
+
 </html>
