@@ -2,45 +2,59 @@ function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-async function changeWordCool(original, newWord){
+async function changeWordCool(currentName){
+    let original = currentName
+    let newWords = ["A Programmer", "Someone who hates CSS", "A Web Developer", "An Epic Gamer", "A Scissor-Lift Enthusiast", "A High-School Student"]
+    random = Math.floor(Math.random() * newWords.length);
+    newName = newWords[random]
+    if(newName == original){
+        newName = "Hayden Carpenter"
+    }
     for(let i = 1; i <= original.length; i++){
         var cropped = original.slice(0, original.length-i);
         $("#me-name").text(cropped);
         await sleep(100);
     }
-    for(let i = 1; i <= newWord.length; i++){
-        var cropped = newWord.slice(0, i);
+    for(let i = 1; i <= newName.length; i++){
+        var cropped = newName.slice(0, i);
         $("#me-name").text(cropped);
         await sleep(80);
     }
+    return newName
 }
 
-
-function startNameChange(){
-    setTimeout(async () => {
-        let original = "Hayden Carpenter"
-        let newWords = ["A Programmer", "Someone who hates CSS", "A Web Developer", "An Epic Gamer", "A Scissor-Lift Enthusiast", "A Student"]
-        random = Math.floor(Math.random() * newWords.length);
-        changeWordCool(original, newWords[random])
-     }, 2000);
+function startNameChange(currentName){
+    var promise = new Promise(function(resolve, reject) {
+        window.setTimeout(function() {
+          resolve(changeWordCool(currentName));
+        }, 2000);
+      });
+    return promise;
 }
-
 
 
 $(document).ready(function(){
-    
+    currentName = "Hayden Carpenter"
     let sjOffset = $("#ScoutJanssen").offset().top - 200;
-    console.log(sjOffset)
-    let titleOffset = $("#title").offset().top;
+    let titleOffset = $("#ScoutJanssen").offset().top;
     let nameTriggered = false;
     let sjTriggered = false;
     $("#visit-FRC").css({'margin-left': $(window).width()})
-    
     if(!nameTriggered){
-        startNameChange()
         nameTriggered = true;
+        startNameChange(currentName).then(data => {currentName = data})
     }
+
+    setInterval(() => {
+        nameTriggered = false;
+        if ($(window).scrollTop() <= titleOffset){
+            nameTriggered = true;
+            startNameChange(currentName).then(data => {currentName = data})
+        }
+    }, 6000)
     var $w = $(window).scroll(function(){
+        
+
         $('#progress').css({'height': (($w.scrollTop())/($(document).height()- $(window).height())) * $(window).height()})
 
         if(!sjTriggered){
