@@ -2,6 +2,11 @@ function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
+var portfolio = () => {
+    return this;
+};
+//I'll show myself out
+
 async function changeWordCool(currentName){
     let original = currentName
     let newWords = ["A Programmer", "Someone who hates CSS", "A Web Developer", "An Epic Gamer", "A Scissor-Lift Enthusiast", "A High-School Student"]
