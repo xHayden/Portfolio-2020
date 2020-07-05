@@ -228,7 +228,7 @@ body {
     }
 }
 
-@media screen and (max-width: 481px){
+@media screen and (max-width: 700px){
     #progress {
         z-index: 2;
     }
