@@ -228,6 +228,17 @@ body {
     }
 }
 
+@media screen and (max-height: 550px){
+    .nav {
+        display: none;
+        float: left;
+        margin-left: 2%;
+        position: fixed;
+        top: 15%;
+
+}
+
+
 @media screen and (max-width: 600px){
     .nav {
         display: none;
