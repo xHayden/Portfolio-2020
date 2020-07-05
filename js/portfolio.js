@@ -36,9 +36,19 @@ function startNameChange(currentName){
       });
     return promise;
 }
+function removeHash(){ 
+    history.replaceState("", document.title, window.location.origin + window.location.pathname + window.location.search);
+}
+
 
 
 $(document).ready(function(){
+    $('.arrow').click(function(){
+        setTimeout(function(){
+            removeHash()
+        },1); 
+    });
+    
     currentName = "Hayden Carpenter"
     let sjOffset = $("#ScoutJanssen").offset().top - 200;
     let titleOffset = $("#ScoutJanssen").offset().top;
