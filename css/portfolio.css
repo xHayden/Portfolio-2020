@@ -39,11 +39,10 @@ html {
 }
 
 .nav {
-    top: 0;
     float: left;
     margin-left: 2%;
     position: fixed;
-    top: 20%;
+    top: 15%;
     
 }
 
@@ -183,7 +182,10 @@ body {
     float: left;
 }
 
-
+#duck {
+    margin-top: 2vw;
+    height: 5vw;
+}
 
 /**https://codepen.io/raf187/pen/BvgGRQ**/
 .arrow{

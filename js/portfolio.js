@@ -44,7 +44,6 @@ $(document).ready(function(){
     let titleOffset = $("#ScoutJanssen").offset().top;
     let nameTriggered = false;
     let sjTriggered = false;
-    $("#visit-FRC").css({'margin-left': $(window).width()})
     if(!nameTriggered){
         nameTriggered = true;
         startNameChange(currentName).then(data => {currentName = data})
@@ -52,9 +51,11 @@ $(document).ready(function(){
 
     setInterval(() => {
         nameTriggered = false;
-        if ($(window).scrollTop() <= titleOffset){
-            nameTriggered = true;
-            startNameChange(currentName).then(data => {currentName = data})
+        if(!document.hidden){
+            if ($(window).scrollTop() <= titleOffset){
+                nameTriggered = true;
+                startNameChange(currentName).then(data => {currentName = data})
+            }
         }
     }, 6000)
     var $w = $(window).scroll(function(){
@@ -64,7 +65,8 @@ $(document).ready(function(){
 
         if(!sjTriggered){
             if ($w.scrollTop() >= sjOffset){
-                $("#visit-FRC").stop().animate({'margin-left': '0'}, 1000, 'linear');
+                /*$("#duck").stop().animate({'padding-left': 0}, 1000, 'linear');
+                $("#duck").animate({'padding-right': $(window).width()}, 1000, 'linear');*/
                 sjTriggered = true;
         
             } else {
