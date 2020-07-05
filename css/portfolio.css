@@ -261,8 +261,8 @@ body {
     }
     .footer {
         z-index: 1;
-        padding-right: 10%;
         background-color: white;;
+        width: 100%;
         padding-left: 10px;
         position: fixed;
         bottom: 0;
@@ -270,6 +270,20 @@ body {
     .section-heading {
         font-size: 7vw;
     }
+    #portfolio-joke p {
+        font-size: 4vw !important;
+    }
+    .section a {
+        font-size: 5vw;
+    }
+    #contact-div img {
+        width: 30%;
+    }
+    #contact-div a {
+        font-size: 5vw;
+    }
+
+    
 }
 
 
@@ -347,7 +361,7 @@ body {
     }
     .footer {
         z-index: 1;
-        padding-right: 10%;
+        width: 100%;
         background-color: white;;
         padding-left: 10px;
         position: fixed;
