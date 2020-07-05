@@ -6,7 +6,7 @@ html {
     scroll-behavior: smooth;
     font-family: 'Bebas Neue', cursive;
     margin: 0;
-    overflow-x:hidden
+    overflow-x:hidden;
 }
 
 #portfolio-container {
@@ -187,6 +187,10 @@ body {
     height: 5vw;
 }
 
+#contact-div img {
+    width: 10%;
+}
+
 /**https://codepen.io/raf187/pen/BvgGRQ**/
 .arrow{
     position: absolute;
@@ -222,4 +226,87 @@ body {
         opacity: 0;
         transform: rotate(45deg) translate(20px,20px);
     }
+}
+
+@media screen and (max-width: 481px){
+    #progress {
+        z-index: 2;
+    }
+
+
+    #contact-div a {
+        font-size: 5vw;
+    }
+
+    .section a {
+        font-size: 5vw;
+    }
+
+    #contact-div img {
+        width: 30%;
+    }
+
+
+    .nav {
+        display: none;
+        float: left;
+        margin-left: 2%;
+        position: fixed;
+        top: 15%;
+        
+    }
+
+    .big-text-main {
+        font-size: 12vw;
+        display:inline-block;
+        margin-top: 0;
+    }
+
+    .section p {
+        font-size: 5vw;
+    }
+
+    #portfolio-joke p {
+        font-size: 4vw !important;
+    }
+
+    .main-section {
+        justify-content: center;
+        align-items: center;
+        width: 75%;
+        height: 100%;
+        text-align: center;
+        margin: auto;
+    }
+    .section-heading {
+        margin-top: 0;
+        padding-top: 10%;
+        font-weight: 100;
+        font-size: 12vw;
+        font-family: 'Bebas Neue', cursive;
+    }
+    
+    .section {
+        justify-content: center;
+        width: 75%;
+        height: 100%;
+        text-align: center;
+        margin: auto;
+    }
+    .arrow span{
+        display: none;
+    }
+    #duck {
+        margin-top: 2vw;
+        height: 25vw;
+    }
+    .footer {
+        z-index: 1;
+        padding-right: 10%;
+        background-color: white;;
+        padding-left: 10px;
+        position: fixed;
+        bottom: 0;
+    }
+  
 }
