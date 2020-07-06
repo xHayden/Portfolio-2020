@@ -48,6 +48,12 @@ $(document).ready(function(){
             removeHash()
         },1); 
     });
+
+    $('.nav').click(function(){
+        setTimeout(function(){
+            removeHash()
+        },1); 
+    });
     
     currentName = "Hayden Carpenter"
     let sjOffset = $("#ScoutJanssen").offset().top - 200;
