@@ -182,9 +182,9 @@ body {
     float: left;
 }
 
-#duck {
+#flipgif {
     margin-top: 2vw;
-    height: 5vw;
+    height: 20vw;
 }
 
 #contact-div img {
@@ -267,7 +267,7 @@ body {
     .arrow span{
         display: none;
     }
-    #duck {
+    #flipgif {
         margin-top: 2vw;
         height: 10vw;
     }
@@ -367,7 +367,7 @@ body {
     .arrow span{
         display: none;
     }
-    #duck {
+    #flipgif {
         margin-top: 2vw;
         height: 25vw;
     }
