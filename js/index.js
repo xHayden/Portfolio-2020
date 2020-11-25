@@ -158,8 +158,8 @@ $(document).ready(() => {
 
 
 async function updateDynamicName(oldName){
-    if(!oldName){ oldName = "Hayden."; await sleep(2000); };
-    let options = ["a web developer.", "a student.", "a programmer.", "a fullstack developer.", "Hayden."];
+    if(!oldName){ oldName = "hayden."; await sleep(2000); };
+    let options = ["a web developer.", "a student.", "a programmer.", "a fullstack developer.", "hayden."];
     let randomOption = Math.floor(Math.random() * options.length);
     let newName = options[randomOption];
     let sameCharCount = 0;
