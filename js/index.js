@@ -3,7 +3,6 @@ function sleep(ms) {
 }
 
 $(document).ready(() => {
-  
     particlesJS("particles-js", {
         "particles": {
           "number": {
@@ -119,14 +118,29 @@ $(document).ready(() => {
     $('#fullpage').fullpage({
     //options here
       scrollingSpeed: 1200,
+      responsiveWidth: 1025,
 		  autoScrolling:true,
         scrollHorizontally: true,
         licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
-        anchors: ['intro', '2020', '2019'],
+        anchors: ['intro', 'projects', 'experience'],
         onLeave: (origin, destination, direction) => {
             var loadedSection = this;
+            
+            if(destination.anchor == "projects"){
+              console.log("hi")
+              anime({
+                targets: '#projects-flexbox div',
+                //translateX: ["-100%", 0],
+                translateY: ["100%", 0],
+                scale: 1,
+                duration: 1200,
+                easing: 'easeInOutCubic',
+                delay: 000,
+              });
+            }
+            
             anime({
-                targets: '#year-' + destination.anchor + '-text',
+                targets: '#' + destination.anchor + '-text',
                 translateX: ["-100%", 0],
                 scale: 1,
                 duration: 1200,
@@ -134,7 +148,7 @@ $(document).ready(() => {
                 delay: 000,
               });
             anime({
-                targets: (".year-" + destination.anchor + "-desc"),
+                targets: ("." + destination.anchor + "-desc"),
                 translateX: ["-100%", 0],
                 scale: 1,
                 duration: 1200,
@@ -143,7 +157,7 @@ $(document).ready(() => {
                 
               });
             anime({
-                targets: '#year-' + destination.anchor + '-img',
+                targets: '#' + destination.anchor + '-img',
                 translateX: ["100%", 0],
                 scale: [0.9, 1],
                 duration: 2000,
@@ -154,7 +168,6 @@ $(document).ready(() => {
         }
   });
 });
-
 
 
 async function updateDynamicName(oldName){
