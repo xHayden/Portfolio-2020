@@ -78,8 +78,8 @@ a:hover, a:active, a:visited, a {
     border-radius: 5px;
     /*background-color: rgba(39, 39, 39, 0.281);*/
     padding: calc(10px + 1vw);
-    margin-left: 13%;
-    margin-right: 13%;
+    margin-left: calc(13%);
+    margin-right: calc(13%);
     overflow-y: hidden;
     overflow-x: hidden;
 }
@@ -236,3 +236,31 @@ body{
     }
 }
 
+@media only screen and (min-width: 2000px) {
+    #content { 
+        margin-top: 0%;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+    .section-container {
+        margin-left: calc(22%);
+        margin-right: calc(22%);
+    }
+
+    .section-container h1 {
+        font-size: calc(50px + 0.2vw);
+        padding-bottom: 5px;
+    }
+
+    #projects-flexbox h3 {
+        font-size: calc(18px + 0.2vw);
+    }
+    
+
+    #projects-flexbox p, .section-container p {
+        padding-bottom: 10px;
+        padding-top: 10px;
+        font-size: calc(13px + 0.2vw);
+    }
+}
