@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -13,31 +12,63 @@
     <script src="js/fullpage.js"></script>
     <script src="js/anime.min.js"></script>
     <script src="js/slidr.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script type="module" src="js/loadinganim.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
     <script src="js/index.js"></script>
     
     <link rel="stylesheet" href="css/index.css?r=r">
     
-    <title>Portfolio</title>
+    <title>Hayden Carpenter</title>
 </head>
 <body>
+    <!--<canvas id="c"></canvas>-->
+    <nav>
+        <div>
+            <ul class="flex-container">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                
+            </ul>
+            <ul id="nav-right">
+                <li>Portfolio | 2020</li>
+            </ul>
+        </div>
+    </nav>
+
     <div id="particles-js"></div>
     <div id="fullpage">
         <div class="section slide-in-right">
             <div id="content">
                 <div class="intro">
-                    <h1>hi, i'm <span id="dynamic-name">hayden.</span></h1>
+                    <h1>
+                        > hi, i'm <span id="dynamic-name">hayden.</span>
+                    </h1>
                 </div>
                 <br>
+            </div>
+        </div>
+        <div class="section">
+            <div class="section-container">
+                <h1>About Me</h1>
+                <hr style="border: 1px solid rgb(189, 247, 255);">
+                <div>
+                    <p>I'm a student at Decatur High School. I like making cool projects and need ideas.</p>
+                    <p>Unfortunately, I've ended up doing a bunch of web design.</p>
+                    <p></p>
+                    <canvas id="experience-chart" width="400" height="100"></canvas>
+                </div>
             </div>
         </div>
          <div class="section slide-in-right" id="projects-ref">
             <div class="section-container">
                 <h1>Projects</h1>
+                <p>*More projects can be found on my <a href="https://github.com/xHayden/" target="_blank">GitHub</a>.</p>
                 <hr style="border: 1px solid rgb(189, 247, 255);">
                 <div class="flex-container" id="projects-flexbox">
                     <div>
-                        <h3>Code Decatur (2020-Present)</h3>
+                        <h3>Code Decatur</h3>
                         <p>
                             Code Decatur is a coding organization primarily based out of Decatur High School. We teach students how to code and provide an environment in which they can work to create cool projects.
                         </p>
@@ -47,7 +78,7 @@
                         </div>
                     </div>
                     <div>
-                        <h3>Scout Janssen (2019-Present)</h3>
+                        <h3>Scout Janssen</h3>
                         <p>
                             Scout Janssen is a FRC Scouting tool that allows teams to properly obtain data on other teams during matches and produces models based on said data.
                         </p>
@@ -57,7 +88,7 @@
                         </div>
                     </div>
                     <div>
-                        <h3>Hayden.gg (2020-Present)</h3>
+                        <h3>Hayden.gg</h3>
                         <p>
                             Hayden.gg is my personal website. It currently hosts my portfolio (this), but in the future I plan to add other tools such as a url shortener, an image hoster, and more.
                         </p>
@@ -66,33 +97,18 @@
                         </div>
                     </div>
                 </div>
-                <hr style="border: 1px solid rgb(189, 247, 255);">
-                <p>More projects can be found on my <a href="https://github.com/xHayden/" target="_blank">GitHub</a>.</p>
+                
+
                 
             </div>
         </div>
-          <!--<div class="section slide-in-right" id="experience-ref">
-            <h1>Experience</h1>
-        </div> -->
-    </div>
-    <!--
-    The FIRST Robotics Competition (FRC) is a global robotics tournaments where teams compete to be the best at that year's game.
-    The game can vary from year to year, but competitors can design flexible systems to reduce the load of each year's competition.
-    Scout Janssen is a FRC Scouting tool that allows teams to properly obtain data on other teams during matches and produces models based on said data.
-
-    <a href="https://frc4026.com" target="_blank">frc4026.com</a>
-
-
-    Code Decatur is a coding organization primarily based out of Decatur High School. We teach students how to code and provide an environment in which they can work to create cool projects.
-    <a href="https://codedecatur.org" target="_blank">codedecatur.org</a>
-
-    MidiToEarsketch is a script which is capable of converting any MIDI file into input code for Georgia Tech's EarSketch. We used this to create a song, "La Wooshenella", which converts the MIDI file of the piano piece "La Campanella" to "woosh" sounds produced by your's truly.
-    <a href="https://github.com/xHayden/MidiToEarsketch" target="_blank">MidiToEarsketch source</a>
-
-    Karten is a flashcard creation tool that uses language APIs to allow you to speed up flashcard creation for foreign language learning. Karten is built using React.
-    <a href="https://github.com/xHayden/Karten" target="_blank">Karten source</a>-->
-    <div class="footer">
-        <p>Built by Hayden Carpenter | <a href="https://github.com/xHayden/" target="_blank">GitHub</a> | <a href="mailto:me@hayden.gg" target="_blank">Contact</a> | <a href="https://hayden.gg/old-portfolio/" target="_blank">Old Portfolio</a></p>
+        <div class="section" id="contact-ref">
+            <div class="section-container">
+                <h1>Contact</h1>
+                <hr style="border: 1px solid rgb(189, 247, 255);">
+                <h3><a href="mailto:me@hayden.gg">me@hayden.gg</a></h3>
+            </div>
+        </div>
     </div>
 </body>
 </html>

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&family=Source+Code+Pro&display=swap');
+
 html {
     scroll-behavior: smooth;
     
@@ -6,81 +8,107 @@ html {
 body { 
     background-color: rgb(36, 34, 32);
     color: white;
+    
+    font-family: 'Roboto', sans-serif;
+    
 }
 
+nav { 
+    font-family: 'Source Code Pro', monospace;
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
 
+nav .flex-container {
+    flex-direction: row;
+}
+
+#nav-right { 
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li {
+    float: left;
+    display: block;
+    padding: 14px 16px;
+    
+} 
+
+nav li a:active, nav li a:checked, nav li a:link, nav li a:visited {
+    color: white;
+    text-align: center;
+    text-decoration: none; 
+}
 
 #content { 
     margin-top: 0%;
     margin-left: 20%;
     margin-right: 20%;
+}
 
-}
 .intro h1 {
-    font-size: calc(27px + 2.2vw)
+    font-size: calc(9px + 2vw);
+    font-family: 'Source Code Pro', monospace;
+    letter-spacing: 1px;
+    /* background-color: rgb(24, 24, 24); */
+    padding: calc(10px + 1vw);
+    border: calc(2px + 0.1vw) solid rgb(223, 223, 223);
 }
-#brief-desc {
-    margin-top: 40px;
+
+#typechar {
+    color: white;
 }
 
 a:hover, a:active, a:visited, a {
     color: #c6fff7;
 }
 
-.year-label-container {
-    overflow-y: hidden;
-    overflow-x: hidden;
-}
-
-
-.year-label {
-    font-size: calc(10px + 3vw);
-    transition: 'color 1s ease-in-out';
-    
-}
-
-.year-label:hover {
-    text-decoration-line: underline ;
-    -moz-text-decoration-line: underline;
-}
-
 .section-container {
-    margin-left: 15%;
-    margin-right: 15%;
+    border-radius: 5px;
+    /*background-color: rgba(39, 39, 39, 0.281);*/
+    padding: calc(10px + 1vw);
+    margin-left: 13%;
+    margin-right: 13%;
     overflow-y: hidden;
     overflow-x: hidden;
 }
 
-.year-container img {
-    width: calc(10vw + 180px);
-    
+.section-container h1 {
+    font-family: 'Source Code Pro', monospace;
+    font-size: calc(20px + 1.5vw);
 }
 
-
-.project-img {
-    padding-left: 40px;
-}
-.year-container p {
-    font-size: 1.2vw;
+.section-container h3 {
+    font-family: 'Source Code Pro', monospace;
+    font-size: calc(15px + 0.5vw);
+    color: rgb(234, 253, 255);
 }
 
-.year-container h1 {
-    margin: 0;
-    font-size: 4vw;
-    color: #c6fff7;
-}
-.top-right {
-    position: absolute;
-    right: 0;
-    top: 0;
-    margin-right: 1%;
-    margin-top: 1%;
+.section-container p {
+    font-size: calc(7px + 0.5vw);
 }
 
-.slide {
-    
+.section-container table {
+    width: 100%;
+    background-color: #1d1d1d;
 }
-
+.section-container table td, .section-container table th {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
 
 #projects-flexbox {
     width: 100%;
@@ -93,28 +121,45 @@ a:hover, a:active, a:visited, a {
 #projects-flexbox > div {
     margin: 5px;
 }
+
 #projects-flexbox h3 {
-    
+    margin-bottom: 15px;
+    text-decoration: underline;
 }
+
+#projects-flexbox p {
+    font-size: calc(7px + 0.5vw);
+}
+
 
 body{
     background: radial-gradient(ellipse at bottom,
-                                #15161a 0%, #000000 100%);
+                                #111111 0%, #000000 100%);
 }
 
 #particles-js {
     position: absolute;
     width: 100%;
     height: 100%;
-  }
+}
 
-  .footer {
+.footer {
     z-index: 1;
     width: 100%;
-    padding-left: 10px;
+    
     position: fixed;
     bottom: 0;
 }
+
+.footer p {
+    padding-left: 10px;
+    margin: 0;
+    background-color: rgb(24, 24, 24);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
 #progress {
     border-left: 2px solid grey;
     position: fixed;
@@ -125,14 +170,6 @@ body{
 
 .border {
     border: none !important;
-}
-
-.year-container h1 {
-    
-}
-
-.year-container table {
-    
 }
 
 #dynamic-name {
@@ -153,8 +190,28 @@ body{
     font-size: calc(10px + 1vw)
 }
 
+.mobile-margin {
+   margin-bottom: 10%;
+   margin-top: 10%;
+}
 
 @media only screen and (max-width: 600px) {
+    .section-container {
+        background-color: transparent;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    nav .flex-container {
+        display: none;
+        text-align: center;
+    }
+
+    #nav-right {
+        display: none;
+    }
+
+
     #content {
         margin-left: 10%;
         margin-right: 10%;
@@ -165,16 +222,13 @@ body{
 }
 
 @media (max-width: 1025px) {
-    .footer {
-        
-        padding-top: 5px;
-        background-color: #000000;
+    #projects-flexbox h3 {
+        font-size: calc(15px + 1.2vw);
     }
-    .section-container h3 {
-        font-size: calc(12px + 2vw);
-    }
-    .section-container p {
-        font-size: calc(7px + 2vw);
+    
+
+    #projects-flexbox p, .section-container p {
+        font-size: calc(10px + 0.5vw);
     }
     
     #projects-flexbox {
