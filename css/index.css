@@ -253,6 +253,9 @@ body{
 }
 
 @media (max-width: 1025px) {
+    .about-me-table-container table {
+        font-size: 12px;
+    }
     #projects-flexbox h3 {
         font-size: calc(15px + 1.2vw);
     }
