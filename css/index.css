@@ -99,15 +99,46 @@ a:hover, a:active, a:visited, a {
     font-size: calc(7px + 0.5vw);
 }
 
-.section-container table {
-    width: 100%;
-    background-color: #1d1d1d;
+.about-me {
+    text-align: center;
 }
-.section-container table td, .section-container table th {
-    padding-left: 10px;
-    padding-right: 10px;
+
+.about-me-table-container { 
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+
+.about-me-table-container table {
+    font-size: 1rem;
+}
+
+
+.section-container table {
+    text-align: center;
+    width: 100%;
+    
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.section-container th {
+    width: 50%;
     padding-top: 5px;
     padding-bottom: 5px;
+}
+
+.section-container td {
+    width: 50%;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+.section-container table td, .section-container table th {
+
 }
 
 #projects-flexbox {
@@ -134,7 +165,7 @@ a:hover, a:active, a:visited, a {
 
 body{
     background: radial-gradient(ellipse at bottom,
-                                #111111 0%, #000000 100%);
+                                #202020 0%, #181818 100%);
 }
 
 #particles-js {
